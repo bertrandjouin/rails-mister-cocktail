@@ -1,7 +1,13 @@
-<h1>Cocktails list</h1>
-
-<% @cocktails.each do |cocktail| %>
-<li><%= cocktail.name.capitalize %> <%= link_to "recipe", cocktail_path(cocktail.id) %></li>
-<% end %>
-
-<%= link_to "create new", new_cocktail_path %>
+<div class="container">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1525202705644-6691dccddd2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80)">
+    <h1>Cocktails list</h1>
+  </div>
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1553607558-455f4310f6ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=672&q=80)">
+        <%= link_to cocktail.name.capitalize, cocktail_path(cocktail.id) %>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to "create new", new_cocktail_path %>
+</div>
