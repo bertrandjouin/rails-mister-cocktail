@@ -1,39 +1,26 @@
-.navbar-lewagon {
-  display: flex;
-  justify-content: space-between;
-  background: white;
-  align-items: center;
-  height: 50px;
-  padding: 0px 10px;
-  p {
-    margin: 0px;
-  }
+.fa-1x {
+font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+cursor: pointer;
+}
+.dark-blue-text {
+color: #0A38F5;
+}
+.dark-pink-text {
+color: pink;
+}
+.dark-amber-text {
+color: #ff6f00;
+}
+.dark-teal-text {
+color: #004d40;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.nav-link {
+  text-align: right;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
-.green {
-  background-color: rgba(11,156,49,0.8);
-  border:1px solid rgb(11,156,49);
-  &:hover {
-    opacity: 1;
-    background-color: rgb(11,156,49);
-    border:1px solid rgb(11,156,49);
-  }
-}
-
-.lien {
-  text-decoration: none;
-  color: rgba(11,156,49,0.8);
-  &:hover {
-      text-decoration: none;
-      color: rgba(11,156,49,0.8);
-      opacity: 1;
-  }
+.white {
+  background-color: white;
 }
