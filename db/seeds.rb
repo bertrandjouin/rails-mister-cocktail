@@ -11,20 +11,25 @@ Ingredient.destroy_all
 Dose.destroy_all
 puts "Creating categories..."
 
-gin = Cocktail.create!(name: "Gin To")
+gin = Cocktail.create!(name: "Gin Tonic")
 sunrise = Cocktail.create!(name: "Tequila Sunrise")
-caipirina = Cocktail.create!(name: "caipirina")
-tomcollins = Cocktail.create!(name: "tom collins")
+caipirina = Cocktail.create!(name: "Caipirina")
+tomcollins = Cocktail.create!(name: "Tom Collins")
 
-lemon = Ingredient.create(name: "lemon")
-ice = Ingredient.create!(name: "ice")
-menthole = Ingredient.create!(name: "menthol")
-salt = Ingredient.create!(name: "salt")
+lemon = Ingredient.create(name: "Lemon")
+ice = Ingredient.create!(name: "Ice")
+mint = Ingredient.create!(name: "Mint")
+salt = Ingredient.create!(name: "Salt")
 tequila = Ingredient.create!(name: "Tequila")
-sucredecanne = Ingredient.create!(name: "sucre de canne")
-gin = Ingredient.create!(name: "gin")
+sucredecanne = Ingredient.create!(name: "Cane sugar")
+gin = Ingredient.create!(name: "Gin")
+rum = Ingredient.create!(name: "Rum")
+orangejuice = Ingredient.create!(name: "Orange juice")
+cointreau = Ingredient.create!(name: "Cointreau")
+perrier = Ingredient.create!(name: "Perrier")
+tonic = Ingredient.create!(name: "Tonic")
 
-Dose.create!(description: "12cl", cocktail_id: gin.id, ingredient_id: lemon.id)
-Dose.create!(description: "9cl", cocktail_id: sunrise.id, ingredient_id: tequila.id)
+Dose.create!(description: "3cl", cocktail_id: tomcollins.id, ingredient_id: lemon.id)
 Dose.create!(description: "9cl", cocktail_id: tomcollins.id, ingredient_id: gin.id)
+Dose.create!(description: "1cl", cocktail_id: tomcollins.id, ingredient_id: sucredecanne.id)
 puts "Finished!"

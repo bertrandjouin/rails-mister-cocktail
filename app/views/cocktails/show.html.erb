@@ -6,7 +6,7 @@
     <h1>Ingrédients (<%= @cocktail.doses.count %>): </h1>
       <% @cocktail.doses.each do |dose| %>
         <div class="card-dose">
-          <img src="https://source.unsplash.com/400x300/?<%=dose.ingredient.name%>" />
+          <img src="https://source.unsplash.com/400x300/?ingredient-<%=dose.ingredient.name%>" />
           <div class="card-dose-infos">
             <h2> <%= dose.ingredient.name %></h2>
             <p>Quantity : <%= dose.description %></p>

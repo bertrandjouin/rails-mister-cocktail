@@ -13,9 +13,6 @@
 }
 .cards i {
   font-size: 15px;
-  // position: absolute;
-  // top: 10px;
-  // left: 190px;
   opacity: 0.8;
     &:hover {
     opacity: 1;
@@ -35,7 +32,7 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 20px 0px;
+  margin: 10px 0px;
   position: relative;
 }
 
