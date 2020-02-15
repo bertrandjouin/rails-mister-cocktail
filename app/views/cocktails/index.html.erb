@@ -7,7 +7,7 @@
 
 <% if cocktail.photo.attached? %>
 
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dulyuyhwc/image/upload/v1581691952/<%=cocktail.photo.key%>)">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_tag cocktail.photo.key%>')">
         <%= link_to cocktail.name.capitalize, cocktail_path(cocktail.id) %>
       </div>
 
