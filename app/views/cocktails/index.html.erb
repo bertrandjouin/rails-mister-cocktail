@@ -1,21 +1,19 @@
-<div class="container">
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1525202705644-6691dccddd2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80)">
-    <h1>Cocktails list</h1>
-  </div>
-  <div class="cards">
-    <% @cocktails.each do |cocktail| %>
+<div class="main-container">
+  <div class="container">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1525202705644-6691dccddd2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80)">
+      <h1>Cocktails list</h1>
+    </div>
+    <div class="cards">
+      <% @cocktails.each do |cocktail| %>
 
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://source.unsplash.com/1600x900/?cocktail-<%=cocktail.name%>')">
-        <p>
-          <%= link_to '<i class="fas fa-trash"></i>'.html_safe, delete_path(cocktail), method: :delete, data: { confirm: 'are you sure?'} %>
-        </p>
-        <br>
-        <%= link_to cocktail.name.capitalize, cocktail_path(cocktail.id) %>
-
-
-
-      </div>
-    <% end %>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://source.unsplash.com/1600x900/?cocktail-<%=cocktail.name%>')">
+          <p>
+            <%= link_to '<i class="fas fa-trash"></i>'.html_safe, delete_path(cocktail), method: :delete, data: { confirm: 'are you sure?'}, class: 'card-remove-link'%>
+          </p>
+          <br>
+          <%= link_to cocktail.name.capitalize, cocktail_path(cocktail.id) %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
-
