@@ -4,6 +4,8 @@
 </div>
 <% if @cocktail.photo.attached? %>
 <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+<% else %>
+<img src="https://source.unsplash.com/400x300/?cocktail-<%=@cocktail.name%>" alt="">
 <% end %>
 
 <% @cocktail.doses.each do |dose| %>
