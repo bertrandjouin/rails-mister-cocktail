@@ -1,12 +1,7 @@
 
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1535392432937-a27c36ec07b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80)">
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://source.unsplash.com/1600x900/?cocktail-<%=@cocktail.name%>')">
   <h1><%= @cocktail.name.capitalize %></h1>
 </div>
-<% if @cocktail.photo.attached? %>
-<%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
-<% else %>
-<img src="https://source.unsplash.com/400x300/?cocktail-<%=@cocktail.name%>" alt="">
-<% end %>
 
 <% @cocktail.doses.each do |dose| %>
   <li ><i class="fas fa-cocktail"></i><%= dose.description %> -

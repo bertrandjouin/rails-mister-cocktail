@@ -5,17 +5,10 @@
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
 
-<% if cocktail.photo.attached? %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://res.cloudinary.com/dulyuyhwc/image/upload/c_fill,h_300,w_400/<%=cocktail.photo.key%>')">
-        <%= link_to cocktail.name.capitalize, cocktail_path(cocktail.id) %>
-      </div>
-
-
-<% else %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://source.unsplash.com/1600x900/?cocktail-<%=cocktail.name%>')">
         <%= link_to cocktail.name.capitalize, cocktail_path(cocktail.id) %>
       </div>
-      <% end %>
+
     <% end %>
   </div>
   <%= link_to "create new", new_cocktail_path %>
