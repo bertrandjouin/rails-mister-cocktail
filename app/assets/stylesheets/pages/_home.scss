@@ -14,17 +14,17 @@
     margin-bottom: 40vh;
     position:relative;
     // top: -10vh;
-    color: pink;
+    color: $pink;
   }
 }
 
 .pink {
-  background-color: pink;
-  border: 1px solid pink;
+  background-color: $pink;
+  border: 1px solid $pink;
   &:hover {
   background-color: white;
-  color: pink;
-  border: 1px solid pink;
+  color: $pink;
+  border: 1px solid $pink;
   }
 }
 

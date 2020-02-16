@@ -1,7 +1,7 @@
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
+    grid-gap: 10px;
   }
 
 .cards a {
@@ -29,11 +29,14 @@
   color: white;
   font-size: 24px;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 10px 0px;
+  box-shadow: 0 0 10px white;
+  margin: 10px 0px 0px 0px;
   position: relative;
+}
+
+.first {
+  margin-bottom: 30px;
 }
 
 .card-remove-link {
@@ -48,7 +51,7 @@
   overflow: hidden;
   height: 120px;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 2px white;
   display: flex;
   align-items: center;
 }
@@ -75,4 +78,23 @@
 
 .card-dose .card-dose-infos {
   padding: 16px;
+}
+
+@media(max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 570px) {
+  .card-category {
+    max-width: 500px;
+    height: 100px;
+  }
 }

@@ -2,8 +2,11 @@
   margin : 0px auto;
   padding: 10px;
   width: 1100px;
-  background-color: white;
+  // background-color: white;
   border-radius: 3px;
+    h1 {
+    color: white;
+  }
 }
 
 
@@ -20,6 +23,32 @@
   margin : 50px auto;
   padding: 40px;
   width: 500px;
-  background-color: white;
+  // background-color: white;
   border-radius: 3px;
+h1, label {
+  color: white;
+}
+
+}
+
+
+@media(max-width: 600px) {
+  .container {
+    width: auto;
+  }
+  .main-container {
+    width: auto;
+  }
+   .small-container {
+    width: auto;
+    margin: 0px;
+    padding-top: 0px;
+    .btn-primary  {
+      margin-top : 20px;
+      &:hover {
+      margin-top : 20px;
+      background-color: white;
+      }
+    }
+  }
 }

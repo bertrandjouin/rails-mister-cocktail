@@ -1,5 +1,30 @@
-.pink {
-color: white;
-background-color: pink;
+// .btn {
+// color: white;
+// background-color: $pink;
 
+// &:hover{
+//   color: $pink;
+//   background-color: white;
+// }
+// }
+
+.bouton {
+  border : 1px solid $pink;
+  margin-top: 50px;
+  background-color: $pink;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  label {
+  color: white
 }
+  &:hover{
+  border : 1px solid $pink;
+  background-color: white;
+  color: $pink;
+}
+}
+
+
+
+
