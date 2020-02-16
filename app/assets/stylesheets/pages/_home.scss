@@ -1,13 +1,15 @@
 // Specific CSS for your home-page
 .home-banner {
   background-image: radial-gradient(rgba(11,156,49,0.2),rgba(11,156,49,0.2)), url('https://medias.spotern.com/spots/w1280/74/74110-1532336916.jpg');
-  background-size: cover;
+  // background-size: cover;
   justify-content: space-between;
+  background-position: center;
   height: 95vh;
   color: #eee;
   text-align: center;
   padding-top: 20vh;
   top:10vh;
+
   h1 {
     font-size: 80px;
     font-weight: bold;
